@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 User = require("../models/user");
-//
+// test
 const verifyToken = (req, res, next) => {  
   if (req.headers && req.headers.authorization && req.headers.authorization.split(' ')[0] === 'Bearer') {
     jwt.verify(req.headers.authorization.split(' ')[1], process.env.API_SECRET, function (err, decode) {
